@@ -89,7 +89,7 @@ class AnimalFactoryClass implements IAbstractFactory{
         }else if(type.equals("dog")){
             return new DogVoice();
         }
-        throw new AnimalNotFoundException("Animal not found");
+        throw new AnimalException("Animal not found");
     }
 }
 
